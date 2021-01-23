@@ -50,7 +50,7 @@ public class JwtFilter extends OncePerRequestFilter {
                         SecurityContextHolder.getContext().setAuthentication(usernamePasswordAuthenticationToken);
                     }
                 } catch (BadCredentialsException e) {
-                    throw new BadCredentialsException("bad Credential");
+                    throw new BadCredentialsException("bad Credential ");
                 }
             }
         } else {
